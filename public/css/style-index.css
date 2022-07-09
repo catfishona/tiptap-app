@@ -1,0 +1,468 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1e1e1e;
+}
+
+a {
+    color: #d3455b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d3455b;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Color Palette 
+* #f6dde0 -> light pink
+* #d3455b -> dark pink
+*/
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+#navbar {
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 997;
+    box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.08);
+}
+
+#navbar .logo img {
+    max-height: 75px;
+}
+
+.btn-header {
+    display: inline-block;
+    padding: 6px 20px;
+    transition: 0.3s;
+    font-size: 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*TODO: change to basic pink button (default) */
+.btn--signup {
+    margin-left: 15px;
+    border-color: #d3455b;
+    outline: none;
+    background: #d3455b;
+    color: #fff;
+}
+
+.btn--login {
+    margin-left: 30px;
+    color: #d3455b;
+    background: #fff;
+    border-color: #d3455b;
+}
+
+.btn-header:hover {
+    /* TODO: ubah warna */
+    background: #b68f95;
+}
+
+
+/*--------------------------------------------------------------
+# Navbar Menu Selection
+--------------------------------------------------------------*/
+
+.btn-area-header {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 30px;
+    border-left: 1px solid #c4c4c4;
+}
+
+@media (max-width: 969px) {
+    .btn-area-header {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        border-left: 0;
+    }
+}
+
+.navbar ul {
+    margin: 0;
+    padding-left: 25px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.nav-item{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+    white-space: nowrap;
+    /* text-transform: uppercase; */
+    transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+    color: #d3455b;
+}
+
+/* mobile toggler */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header.masthead {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url('/img/pinkstorage.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+header.masthead .masthead-subheading {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+header.masthead .masthead-heading {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+header.masthead .btn{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 16px;
+}
+
+header.masthead .btn-primary {
+    color: #fff;
+    background-color: #d3455b;
+    border-color: #d3455b;
+}
+
+header.masthead .btn-primary:hover {
+    color: #fff;
+    /* TODO: ubah warna */
+    background-color: #b68f95;
+    border-color: #b68f95;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        padding-top: 17rem;
+        padding-bottom: 12.5rem;
+    }
+    header.masthead .masthead-subheading {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        margin-bottom: 2rem;
+    }
+    header.masthead .masthead-heading {
+        font-size: 4.5rem;
+        font-weight: 500;
+        line-height: 4.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+                
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background-color: #f7f7f7;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    /* text-transform: uppercase; */
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "  .";
+    font-size: 40px;
+    color: #f2ae96;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+/* 
+.page-section {
+    padding: 6rem 0;
+}
+
+.page-section h2.section-heading,
+.page-section .section-heading.h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.page-section h3.section-subheading,
+.page-section .section-subheading.h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4rem;
+}
+ */
+
+/*--------------------------------------------------------------
+# Section Card Services
+--------------------------------------------------------------*/
+.card-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-text{
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Section Book Now Elements
+--------------------------------------------------------------*/
+.fa-circle{
+    color: #f6dde0;
+}
+
+.book-section .btn-primary {
+    color: #fff;
+    background-color: #d3455b;
+    border-color: #d3455b;
+}
+
+.book-section .btn-primary:hover {
+    color: #fff;
+    /* TODO: ubah warna */
+    background-color: #b68f95;
+    border-color: #b68f95;
+}
+
+.book-section .btn-book{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    /* padding: 15px, 25px, 15px, 25px; */
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    color: #1e1e1e;
+    font-size: 14px;
+    background: #111;
+}
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: rgb(242, 174, 150);
+}
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+#footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #1e1e1e;
+}
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e1e1e;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-top .icon-text{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#footer .footer-top .footer-right{
+    margin-right: 30px;
+}
+
+#footer .footer-credits {
+    background: rgb(245, 160, 129);
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 13px;
+    color: #1e1e1e;
+}
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: red;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+#footer .social-links a:hover {
+    background: #f6dde0;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Basic Widgets
+# TODO: tambahin!
+--------------------------------------------------------------*/
+.btn-darkpink{
+    color: #fff;
+    background: #d3455b;
+    border-color: #d3455b;
+}
+
+/*--------------------------------------------------------------
+# Checkout (Cust Info > Shipping > Payment)
+--------------------------------------------------------------*/
+.checkout-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f9fa; /*TODO: ghost white*/
+    font-size: 0.8rem
+}
+
+.checkout-card {
+    max-width: 1000px;
+    margin: 2vh
+}
+
+.checkout-container .card-right{
+    margin-right: 0;
+} 
+
+.checkout-container .checkout-card .card-body .card-left{
+    background-color: red;
+}
+
+/* TODO: check*/
+.row {
+    margin: 0
+}
+
+form {
+    padding: 2vh 0
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    margin-bottom: 2vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247)
+}
+
+.left {
+    background-color: #ffffff;
+    padding: 2vh
+}
+
+.left img {
+    width: 2rem
+}
+
+.left .col-4 {
+    padding-left: 0
+}
+
+.right .item {
+    padding: 0.3rem 0
+}
+
+.right {
+    background-color: #ffffff;
+    padding: 2vh
+}
+
+

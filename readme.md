@@ -1,4 +1,4 @@
-# <img src="./public/img/logo.png" width="64"/> TipTap
+# <img src="./public/img/logo.png" width="72"/> TipTap
 <h3>Public Storage Rental</h3>
 
 Rent a public storage rental space for all your storage needs! Select from three storage sizes from small, medium, and large.
@@ -18,7 +18,3 @@ Rent a public storage rental space for all your storage needs! Select from three
 
 https://user-images.githubusercontent.com/79490349/182970760-3e611383-1fa8-403f-abb6-ea8ba0c0941f.mp4
 
-
-
-
-```
